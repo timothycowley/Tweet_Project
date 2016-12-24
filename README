@@ -1,0 +1,100 @@
+id_table.csv:
+	First Name
+	Last Name
+	Party (D, R, I) third party is counted as I
+	State
+	twitter handle
+	twitter id
+	Office
+	the csv file containing their tweets
+
+personality_table.csv: Contains identifying information followed by 52 personality traits, the
+personality traits are given float values, which indicate their percentile compared to the 
+individuals in IBM's survey data
+	Twitter handle
+	First Name
+	Last Name
+	Big5:Openness
+	Adventurousness
+	Artistic interests
+	Emotionality
+	Imagination
+	Intellect
+	Authority-challenging
+	Big5:Conscientiousness
+	Achievement striving
+	Cautiousness
+	Dutifulness
+	Orderliness
+	Self-discipline
+	Self-efficacy
+	Big5:Extraversion
+	Activity level
+	Assertiveness
+	Cheerfulness
+	Excitement-seeking
+	Outgoing
+	Gregariousness
+	Big5:Agreeableness
+	Altruism
+	Cooperation
+	Modesty
+	Uncompromising
+	Sympathy
+	Trust
+	Big5:Emotional range
+	Fiery
+	Prone to worry
+	Melancholy
+	Immoderation
+	Self-consciousness
+	Susceptible to stress
+	Needs:Challenge
+	Needs:Closeness
+	Needs:Curiosity
+	Needs:Excitement
+	Needs:Harmony
+	Needs:Ideal
+	Needs:Liberty
+	Needs:Love
+	Needs:Practicality
+	Needs:Self-expression
+	Needs:Stability
+	Needs:Structure
+	Value:Conservation
+	Value:Openness to change
+	Value:Hedonism
+	Value:Self-enhancement
+	Value:Self-transcendence
+	
+
+WordClusters folder:
+contains CSV results for clustering after truncated SVD 
+
+PersonalityClusters folder:
+contains CSV results from clustering after personality analysis
+
+models folder:
+some of the analysis is slow, so we saved the objects and data needed to cluster by word.
+These include the CountVectorizer, TfidfTransformer, The tfidfTransformed data,
+and the Truncated SVD transformed data, so that it does not need to be rerun each 
+time.
+
+.ods files (libre office calc files, are excell-like files of cluster analysis)
+
+
+
+tweetgrabber.py downloads tweets from the politicians on id_table.csv
+
+
+tweetcombiner.py contains serveral accessory functions for working with tweets
+
+personalityCluster.py does the personality clustering
+
+bagOfWordsCluster.py does the word usage clustering
+
+.ipynb files do some analysis of the clusters
+
+
+
+
