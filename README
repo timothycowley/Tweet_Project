@@ -1,3 +1,18 @@
+# Analysis of Politician Tweets
+
+Ultimately I want to understand what motivates US politicians' positions and behavior and 
+determine if these can be predicted by their social media accounts or other public information.
+Being able to determine or predict their policy positions and behavior could help us make more
+informed choices when voting, and understanding their personalities and motives could help us to be more influential in our lobbying. 
+
+This simple project has a much narrower scope. We wished to test the hypothesis that the
+similarity of a politician's tweets to that of political candidants is predictive of the candidate that the politician supports.
+
+We created a classifier to distinguish between Donald Trump and Hillary Clinton tweets. When we we used the classifier on tweets of US Senators we found a strong correlation between their level of support for the candidate and the number of tweets that were classified as the candidate they support. We also did kMeans clustering to both ask the same question, do they cluster based on the candidate they support as well as to analyze clustering patterns to determine new features that tweets may be predictive of. We found that Senators tend to cluster by state, even when no state identifying information is part of the feature set.  
+
+I haven't had the chance yet to clean up or organize the code. Some code is currently missing, but I'll add it back at a later date. Feel free to contact me if interested in the project. I have also excluded most of the data for the sake of space. All of which is obtained from twitter and IBM Watson's Personality Insights. 
+
+
 id_table.csv:
 	First Name
 	Last Name
